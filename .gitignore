@@ -1,0 +1,33 @@
+# Build
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.csproj.user
+*.pdb
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Configurações locais
+appsettings.*.json
+launchSettings.json
+
+# Pacotes
+*.nupkg
+packages/
+
+# Arquivos temporários
+*.tmp
+*.cache
+*.DS_Store
+
+# EF Core Migrations
+Migrations/
