@@ -10,7 +10,7 @@ Centralizar entradas e saídas financeiras, permitindo visualizar:
 - Saldo final de cada período
 
 ## Escopo inicial
-- Uso pessoal (um único usuário)
+- Uso pessoal (um único usuário) - Talvez: cadastro de usuarios
 - Controle de recebíveis e gastos
 - Separação mensal e por período de pagamento
 - Histórico financeiro
@@ -22,7 +22,7 @@ Centralizar entradas e saídas financeiras, permitindo visualizar:
   - Outras entradas
 - **Gastos**
   - Despesas fixas (aluguel, cartão, contas)
-  - Despesas variáveis (compras, lazer)
+  - Despesas variáveis (contas, compras, lazer)
 
 ## Casos de uso
 - Registrar recebimento de salário por data
@@ -37,7 +37,7 @@ Centralizar entradas e saídas financeiras, permitindo visualizar:
 
 ## Arquitetura
 - **Backend:** .NET Core Web
-- **Banco de dados:** PostgreSQL
+- **Banco de dados:** SQL Server
 - **Arquitetura:** monólito modular (evoluível para microserviços)
 - **Persistência:** dados financeiros estruturados com integridade transacional
 
@@ -45,7 +45,7 @@ Centralizar entradas e saídas financeiras, permitindo visualizar:
 - Praticar organização de domínio
 - Aplicar boas práticas de arquitetura
 - Evoluir gradualmente para recursos mais avançados
-- Servir como projeto de portfólio no GitHub
-
+- Aplicar testes de Unidade
+  
 ## Status
 Em desenvolvimento (MVP)
