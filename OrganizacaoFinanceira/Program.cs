@@ -1,3 +1,4 @@
+using OrganizacaoFinanceira.Data.Mappings;
 using OrganizacaoFinanceira.Exception;
 
 namespace OrganizacaoFinanceira
@@ -11,6 +12,8 @@ namespace OrganizacaoFinanceira
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -18,7 +21,7 @@ namespace OrganizacaoFinanceira
             {
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
-            }
+            }           
 
             app.UseMiddleware<ExceptionMiddleware>();
 
